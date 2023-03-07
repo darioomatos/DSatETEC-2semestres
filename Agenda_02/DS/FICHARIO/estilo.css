@@ -1,49 +1,22 @@
-/* Estilos para o formulário */
-form {
-    width: 50%;
-    margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-input[type="text"],
-textarea {
-    width: 100%;
+.luminus-effect {
+    background-color: #fff;
+    /* cor de fundo branco */
+    color: #333;
+    /* cor do texto preto */
     padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
+    /* espaçamento interno */
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFD700, 0 0 70px #FFD700, 0 0 80px #FFD700, 0 0 100px #FFD700, 0 0 150px #FFD700;
+    /* sombra em várias camadas com efeito luminoso */
+    animation: luminoso 5s infinite;
+    /* animação com efeito luminoso */
 }
 
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+@keyframes luminoso {
+    0% {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFD700, 0 0 70px #FFD700, 0 0 80px #FFD700, 0 0 100px #FFD700, 0 0 150px #FFD700;
+    }
 
-/* Estilos para a página de confirmação */
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.confirmation {
-    width: 50%;
-    margin: 0 auto;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 4px;
-    border: 2px solid #ccc;
+    100% {
+        box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFD700, 0 0 70px #FFD700, 0 0 80px #FFD700, 0 0 100px #FFD700, 0 0 150px #FFD700, 0 0 300px #FFD700;
+    }
 }
